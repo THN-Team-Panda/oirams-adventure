@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oirams-Adventure", "Oirams-Adventure.csproj", "{CAC0D026-6AB3-4AEE-A700-A7AC9AF1D670}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAC0D026-6AB3-4AEE-A700-A7AC9AF1D670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC0D026-6AB3-4AEE-A700-A7AC9AF1D670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC0D026-6AB3-4AEE-A700-A7AC9AF1D670}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{CAC0D026-6AB3-4AEE-A700-A7AC9AF1D670}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{CAC0D026-6AB3-4AEE-A700-A7AC9AF1D670}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{CAC0D026-6AB3-4AEE-A700-A7AC9AF1D670}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

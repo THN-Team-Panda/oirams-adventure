@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://bomboreapdfi3"]
+
+[ext_resource type="Texture2D" uid="uid://bckihh1b7v2cu" path="res://assets/player/movement/cap/Player_Cap1.png" id="1_yjfb2"]
+[ext_resource type="Texture2D" uid="uid://brsc3744wvtbo" path="res://assets/player/movement/cap/Player_Cap2.png" id="2_twuag"]
+[ext_resource type="Texture2D" uid="uid://dhmv2s5hrbqkj" path="res://assets/player/movement/cap/Player_Cap3.png" id="3_wgwne"]
+[ext_resource type="Texture2D" uid="uid://bi6w1n7fxfrx5" path="res://assets/player/movement/normal/Player1.png" id="4_t2u01"]
+[ext_resource type="Texture2D" uid="uid://cssndbwu7p72m" path="res://assets/player/movement/normal/Player2.png" id="5_4v68k"]
+[ext_resource type="Texture2D" uid="uid://bmlj14ncmb7rg" path="res://assets/player/movement/normal/Player3.png" id="6_cs3vq"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yjfb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_twuag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wgwne")
+}],
+"loop": true,
+"name": &"movement_cap",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_t2u01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4v68k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cs3vq")
+}],
+"loop": true,
+"name": &"movement_normal",
+"speed": 5.0
+}]

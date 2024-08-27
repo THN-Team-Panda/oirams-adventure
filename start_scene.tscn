@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://iefptwig0bju"]
+
+[ext_resource type="Texture2D" uid="uid://cf6dy2bu2gp4e" path="res://assets/level/background.png" id="1_ay4kp"]
+[ext_resource type="Texture2D" uid="uid://lobtxcrsrqyb" path="res://assets/level/banner.png" id="2_p2s2i"]
+[ext_resource type="Script" path="res://TextureButtonLevel1.cs" id="3_5mqwo"]
+[ext_resource type="Texture2D" uid="uid://dpcs037oklti6" path="res://assets/menu/button_background_1.jpg" id="4_euso7"]
+[ext_resource type="FontFile" uid="uid://cc1o68agk55p8" path="res://assets/font/Silkscreen-Bold.ttf" id="5_wsifl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_54n4a"]
+font = ExtResource("5_wsifl")
+font_size = 24
+
+[node name="StartScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundTextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 480.0
+texture = ExtResource("1_ay4kp")
+
+[node name="BannerTextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 52.0
+offset_right = 653.0
+offset_bottom = 252.0
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_p2s2i")
+
+[node name="TextureButtonLevel1" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 210.0
+offset_right = 511.0
+offset_bottom = 260.0
+script = ExtResource("3_5mqwo")
+
+[node name="TextureRect" type="TextureRect" parent="TextureButtonLevel1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_euso7")
+
+[node name="Label" type="Label" parent="TextureButtonLevel1"]
+layout_mode = 0
+offset_right = 399.0
+offset_bottom = 51.0
+text = "Level 1"
+label_settings = SubResource("LabelSettings_54n4a")
+horizontal_alignment = 1
+vertical_alignment = 1
