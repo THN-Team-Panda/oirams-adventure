@@ -1,14 +1,64 @@
-[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://bomboreapdfi3"]
+[gd_resource type="SpriteFrames" load_steps=17 format=3 uid="uid://bomboreapdfi3"]
 
+[ext_resource type="Texture2D" uid="uid://daprn108a04ee" path="res://assets/player/attack/cap/Player_Attack_Cap_1.png" id="1_xbnmi"]
 [ext_resource type="Texture2D" uid="uid://bckihh1b7v2cu" path="res://assets/player/movement/cap/Player_Cap1.png" id="1_yjfb2"]
+[ext_resource type="Texture2D" uid="uid://6yxavi0qfkv6" path="res://assets/player/attack/cap/Player_Attack_Cap_2.png" id="2_16l3i"]
 [ext_resource type="Texture2D" uid="uid://brsc3744wvtbo" path="res://assets/player/movement/cap/Player_Cap2.png" id="2_twuag"]
+[ext_resource type="Texture2D" uid="uid://b0gdnhlpvw7om" path="res://assets/player/attack/cap/Player_Attack_Cap_3.png" id="3_bxm1u"]
 [ext_resource type="Texture2D" uid="uid://dhmv2s5hrbqkj" path="res://assets/player/movement/cap/Player_Cap3.png" id="3_wgwne"]
 [ext_resource type="Texture2D" uid="uid://bi6w1n7fxfrx5" path="res://assets/player/movement/normal/Player1.png" id="4_t2u01"]
+[ext_resource type="Texture2D" uid="uid://c37cafs4l3vpc" path="res://assets/player/attack/cap/Player_Attack_Cap_4.png" id="4_vd5dt"]
 [ext_resource type="Texture2D" uid="uid://cssndbwu7p72m" path="res://assets/player/movement/normal/Player2.png" id="5_4v68k"]
+[ext_resource type="Texture2D" uid="uid://cc8lphwrw2v2q" path="res://assets/player/attack/cap/Player_Attack_Cap_5.png" id="5_ufr1f"]
+[ext_resource type="Texture2D" uid="uid://c1a0gurtarlbr" path="res://assets/player/attack/normal/Player_Attack_Normal_1.png" id="6_1o14q"]
 [ext_resource type="Texture2D" uid="uid://bmlj14ncmb7rg" path="res://assets/player/movement/normal/Player3.png" id="6_cs3vq"]
+[ext_resource type="Texture2D" uid="uid://brchch4pwoo8e" path="res://assets/player/attack/normal/Player_Attack_Normal_2.png" id="7_o2keq"]
+[ext_resource type="Texture2D" uid="uid://bidkxhc302lxy" path="res://assets/player/attack/normal/Player_Attack_Normal_3.png" id="8_uf4qd"]
+[ext_resource type="Texture2D" uid="uid://ddck6wbptbfj6" path="res://assets/player/attack/normal/Player_Attack_Normal_4.png" id="9_wljik"]
+[ext_resource type="Texture2D" uid="uid://knc6rh0lw11a" path="res://assets/player/attack/normal/Player_Attack_Normal_5.png" id="10_1pbgf"]
 
 [resource]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xbnmi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_16l3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bxm1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vd5dt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ufr1f")
+}],
+"loop": true,
+"name": &"attack_cap",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_1o14q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_o2keq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uf4qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wljik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1pbgf")
+}],
+"loop": true,
+"name": &"attack_normal",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_yjfb2")

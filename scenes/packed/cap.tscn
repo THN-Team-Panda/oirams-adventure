@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://druk3lebstlap"]
+
+[ext_resource type="SpriteFrames" uid="uid://dno2cbjoyvui4" path="res://assets/cap.tres" id="1_a1gym"]
+[ext_resource type="Script" path="res://classes/Interactives/Cap.cs" id="2_77y7v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iu0fq"]
+size = Vector2(21.5, 12)
+
+[node name="CapScene" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("2_77y7v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_a1gym")
+frame = 1
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.25, -4)
+shape = SubResource("RectangleShape2D_iu0fq")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

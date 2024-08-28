@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d17c8vuajbhh5"]
+
+[ext_resource type="Script" path="res://classes/Interactives/Note.cs" id="1_psi5k"]
+[ext_resource type="SpriteFrames" uid="uid://d01uklola8q7l" path="res://assets/note.tres" id="1_ujxc7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_et06g"]
+size = Vector2(7, 8)
+
+[node name="NoteScene" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_psi5k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_ujxc7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_et06g")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]
