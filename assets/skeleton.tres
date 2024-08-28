@@ -1,0 +1,26 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://o8bno52nhug8"]
+
+[ext_resource type="Texture2D" uid="uid://bhwr76abdtqfv" path="res://assets/skeleton/movement/Skeleton_Movement_1.png" id="1_ollc6"]
+[ext_resource type="Texture2D" uid="uid://cfkao8p8jaeqb" path="res://assets/skeleton/movement/Skeleton_Movement_2.png" id="2_ekv5k"]
+[ext_resource type="Texture2D" uid="uid://cwwixfsucxeyt" path="res://assets/skeleton/movement/Skeleton_Movement_3.png" id="3_nkcww"]
+[ext_resource type="Texture2D" uid="uid://cuouvryssqiph" path="res://assets/skeleton/movement/Skeleton_Movement_4.png" id="4_50kab"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ollc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ekv5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nkcww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_50kab")
+}],
+"loop": true,
+"name": &"movement",
+"speed": 5.0
+}]

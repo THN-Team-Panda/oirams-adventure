@@ -8,10 +8,14 @@ namespace Interactives {
 		public Direction Direction { get; set; } = Direction.Right;
 
 		[Export]
+		public int MaxAmmo { get; set; } = 2;
+
+
+		[Export]
 		public PackedScene Bullet { get; set; }
 
 		[Export]
-		public int Ammo { get; set; } = 2;
+		public int Ammo { get; set; } = 1;
 
 		[Export]
 		public float Speed { get; set; } = 200.0f;
@@ -102,6 +106,11 @@ namespace Interactives {
 
 		public bool PassNote()
 		{
+			if (Ammo >= MaxAmmo)
+				return false;
+
+			Ammo++;
+
 			return true;
 		}
 	}

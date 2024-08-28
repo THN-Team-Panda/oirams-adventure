@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://clacxtscdop3w"]
+
+[ext_resource type="SpriteFrames" uid="uid://o8bno52nhug8" path="res://assets/skeleton.tres" id="1_47yjg"]
+[ext_resource type="Script" path="res://classes/Interactives/Skeleton.cs" id="1_aqso8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bwqhb"]
+size = Vector2(25, 30)
+
+[node name="SkeletonScene" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 9
+platform_floor_layers = 4278190081
+script = ExtResource("1_aqso8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_47yjg")
+animation = &"movement"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_bwqhb")
